@@ -1,18 +1,48 @@
-# JupyterLite PB Demo
+# DOE Project: Plackett-Burman Screening for Adaptive Winglet Design
 
-This is a minimal JupyterLite repository for hosting a notebook that reproduces the Plackett–Burman screening and ANOVA calculations from the presentation.
+This repository contains a reproducible Design of Experiments (DOE) workflow focused on a 12-run Plackett-Burman screening study for winglet geometry factors and drag coefficient response.
 
-## Quick deploy
+The main notebook reconstructs and explains:
 
-1. Create a new repository from the official JupyterLite demo template.
-2. Replace the template `contents/` folder with the `contents/` folder from this package.
-3. Replace or simplify `requirements.txt` with the one included here.
-4. Commit to `main`.
-5. In GitHub:
-   - enable Actions
-   - in Settings -> Pages, set Source to **GitHub Actions**
-   - if needed, in Settings -> Actions -> General, allow **Read and write permissions**
-6. After the workflow finishes, your site will be at:
-   `https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/`
+- factor contrasts and main effects,
+- ANOVA decomposition (Model, Error, Total),
+- factor-level significance using F-tests and right-tail p-values,
+- Pareto-style standardized effect visualization,
+- reduced-model selection by removing the least significant factor.
 
-The notebook opens inside JupyterLite in the browser.
+## Main notebook
+
+- Notebook: `content/pb_screening_anova_demo.ipynb`
+
+## Repository structure
+
+- `content/`: notebook content served by JupyterLite
+- `repl/`: JupyterLite configuration
+- `requirements.txt`: Python package requirements for compatibility/reproducibility
+
+## What you see on the GitHub home page
+
+GitHub shows the root `README.md` automatically as the repository landing content. To change what visitors see first, edit this file and push your commit.
+
+## How to run
+
+### Option A: Open in JupyterLite (browser)
+
+If GitHub Pages is enabled for this repo, the notebook can be opened directly in the browser through the published JupyterLite site.
+
+### Option B: Run locally in VS Code/Jupyter
+
+1. Open the repository.
+2. Install dependencies from `requirements.txt`.
+3. Open `content/pb_screening_anova_demo.ipynb` and run cells top-to-bottom.
+
+## Quick update workflow (README or notebook)
+
+1. Edit files locally.
+2. Commit changes:
+   - `git add .`
+   - `git commit -m "Describe your update"`
+3. Push to GitHub:
+   - `git push origin main`
+
+After push, refresh the repository page to see the updated README/notebook.
