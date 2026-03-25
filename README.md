@@ -20,15 +20,11 @@ The main notebook reconstructs and explains:
 - `repl/`: JupyterLite configuration
 - `requirements.txt`: Python package requirements for compatibility/reproducibility
 
-## What you see on the GitHub home page
-
-GitHub shows the root `README.md` automatically as the repository landing content. To change what visitors see first, edit this file and push your commit.
-
 ## How to run
 
 ### Option A: Open in JupyterLite (browser)
 
-If GitHub Pages is enabled for this repo, the notebook can be opened directly in the browser through the published JupyterLite site.
+The notebook can be opened directly in the browser through the published JupyterLite site.
 
 ### Option B: Run locally in VS Code/Jupyter
 
@@ -36,13 +32,3 @@ If GitHub Pages is enabled for this repo, the notebook can be opened directly in
 2. Install dependencies from `requirements.txt`.
 3. Open `content/pb_screening_anova_demo.ipynb` and run cells top-to-bottom.
 
-## Quick update workflow (README or notebook)
-
-1. Edit files locally.
-2. Commit changes:
-   - `git add .`
-   - `git commit -m "Describe your update"`
-3. Push to GitHub:
-   - `git push origin main`
-
-After push, refresh the repository page to see the updated README/notebook.
